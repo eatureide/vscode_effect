@@ -1,0 +1,26 @@
+.monaco-list-row:hover .borderLayer {
+  visibility: visible !important;
+}
+
+.borderLayer {
+  -webkit-mask-image: radial-gradient(circle at center, white 0%, transparent 80px);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 180px 180px;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+  display: flex;
+}
+
+.borderChild {
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.618);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
